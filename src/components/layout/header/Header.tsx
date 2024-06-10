@@ -1,9 +1,10 @@
+"use client";
 import LogoFiled from "@/components/common/text/LogoField";
 import React from "react";
 import menuArr from "../../../data/menu.json";
 import TextFieldTitle from "@/components/common/text/TextFieldTitle";
 
-const Header = () => {
+export default function Header() {
   return (
     <header className="w-full h-16">
       <div className="w-[100rem] mx-auto">
@@ -19,6 +20,4 @@ const Header = () => {
       </div>
     </header>
   );
-};
-
-export default Header;
+}
