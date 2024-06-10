@@ -1,7 +1,12 @@
 export type MainLayoutType = {
-  children: ReactNode;
-};
+  children: ReactNode
+}
 
 export interface TextFiledType {
-  text: string;
+  text: string
+}
+
+export interface TextLinkFiledType {
+  text: string
+  move: string
 }
