@@ -6,7 +6,7 @@ export interface TextFiledType {
   text: string
 }
 
-export interface TextLinkFiledType {
+export interface TextFiledLinkType {
   text: string
   move: string
 }
