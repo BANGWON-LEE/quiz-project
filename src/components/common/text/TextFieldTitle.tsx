@@ -8,4 +8,4 @@ export default function TextFieldTitle(props: TextFiledType) {
   return <h2 className="text-[1.50rem] font-bold text-primary-400">{text}</h2>
 }
 
-// export default TextFieldTitle;
+
