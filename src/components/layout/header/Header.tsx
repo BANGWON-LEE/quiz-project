@@ -4,15 +4,16 @@ import React, { Fragment } from 'react'
 import menuArr from '../../../data/menu.json'
 import TextFieldTitle from '@/components/common/text/TextFieldTitle'
 import TextFieldLink from '@/components/common/text/TextFiledLink'
+import TextFieldSubTitle from '@/components/common/text/TextFieldSubTitle'
 
 export default function Header() {
   return (
-    <header className="w-full h-16">
+    <header className="w-full h-16 border-b-2">
       <div className="w-[100rem] mx-auto flex items-center">
         <div>
           <LogoFiled />
         </div>
-        <div className="flex justify-around w-full pt-[3.4rem]">
+        <div className="flex justify-around w-full pt-[1rem]">
           {menuArr.menu.map((el, index) => (
             <Fragment key={'menuIndex' + index}>
               <div className="grid items-baseline text-center h-auto w-[15rem] ">
@@ -23,7 +24,8 @@ export default function Header() {
                   <div className="w-[15rem] grid items-center absolute">
                     {el.subMenu.map((sub, subIndex) => (
                       <div className="mx-auto" key={el.subMenu + '' + index}>
-                        {sub}
+                        {/* {sub} */}
+                        <TextFieldSubTitle text={sub} />
                       </div>
                     ))}
                   </div>
